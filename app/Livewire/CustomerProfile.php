@@ -38,6 +38,7 @@ class CustomerProfile extends Component
         $this->active = $this->customer->active;
         $this->getAssets($this->customer);
         $this->getSlas($this->customer);
+        $this->getCustomerContactsWithRoles($this->customer);
         $this->tickets = $this->customer->tickets;
         $this->buildAddressMap();
 
@@ -142,7 +143,7 @@ class CustomerProfile extends Component
 
     public function render()
     {
-        $this->getCustomerContactsWithRoles($this->customer);
+        // $this->getCustomerContactsWithRoles($this->customer);
         return view('livewire.customer-profile');
     }
 }
