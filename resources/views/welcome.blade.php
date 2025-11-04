@@ -300,16 +300,6 @@
 
 @endphp
 
-{{-- @if($browser->isMobile())
-
-    @php
-        header("Location: " . URL::to('/mobileWelcome'), true, 302);
-        exit();
-    @endphp
-    
-@endif --}}
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -399,6 +389,7 @@
                 @include('livewire.page-text.introduction')
             </section>
 
+            {{-- 
             <div class="mr-36 ml-36">
                 <div class="inline-flex items-center justify-center w-full mt-10">
                     <hr class="{{ $hrView }} mt-10" />
@@ -406,9 +397,11 @@
                         {!! $lineMotif !!}
                     </div>
                 </div>
-            </div>
+            </div> 
+            --}}
 
             {{-- List of facilities in the Application --}}
+            {{-- 
             <section class="{{ $section }}" id="facilities">
                 <div class="{{ $view }}">
                     <h4 class="{{ $paragraph_2 }}">
@@ -437,8 +430,10 @@
                         </ul>
                     </div>
                 </div>
-            </section>
+            </section> 
+            --}}
 
+            {{-- 
             <div class="mr-36 ml-36">
                 <div class="inline-flex items-center justify-center w-full mt-10">
                     <hr class="{{ $hrView }} mt-10" />
@@ -446,9 +441,11 @@
                         {!! $lineMotif !!}
                     </div>
                 </div>
-            </div>
+            </div> 
+            --}}
 
             {{-- Images of the facilities --}}
+            {{-- 
             <section class="{{ $section }}">
 
                 <h2 class="{{ $header_1 }}">Views of the Application</h2>
@@ -486,25 +483,19 @@
                     </div>
                 @endforeach
 
-            </section>
+            </section> 
+            --}}
             
             {{-- Contact Me --}}
+             
             <section class="{{ $section }}" id="contact">
-                <div class="{{ $view }}" id="{{ $v['id'] }}">
-                    <p class="{{ $paragraph_4 }} flex flex-row items-center gap-4">
-                        Contact
-                        <a href="#facilities" class="{{ $view_link }}">
-                            {!! $arrowUp !!} 
-                            <span>Go to the Top</span>
-                        </a>
-                    </p>                    
-                </div>
                 <div class="{{ $view }}">
                     <div class="{{ $whiteBox }}">
                         If you are interested to try the Application, Email me at&nbsp;<a href="mailto:Yusaini.Usulludin@proton.me" class="{{ $link }}">Yusaini.Usulludin@proton.me</a>&nbsp;for access details.
                     </div>
-                </div>
-            </section>            
+                </div>            
+            </section>
+            
 
         </div>
     </div>
