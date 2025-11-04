@@ -19,11 +19,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(20)->create();
-        Customer::factory(30)->create();
-        Product::factory(5)->create();
+        User::factory(3)->create();
+        Customer::factory(3)->create();
+        Product::factory(3)->create();
         Roles::factory(1)->create();
-        Supplier::factory(5)->create();
+        Supplier::factory(3)->create();
         UserToRoles::factory(1)->create();
 
         //Create the first root folder
